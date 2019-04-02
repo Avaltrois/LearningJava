@@ -6,12 +6,17 @@ package ua.learningjava.max;
  */
 public class Max {
     /**
-     * Maximum of 2 numbers
+     * Maximum of 3 numbers
      * @return max
      */
     public int max(int first, int second){
         return first>second ? first : second;
     }
 
+    public int max(int first, int second, int third) {
+        int temp= this.max(first, second);
+        int temp1=this.max(temp,third);
 
-}
+    return temp1;
+
+}}
