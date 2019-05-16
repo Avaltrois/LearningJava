@@ -9,14 +9,16 @@ package ua.learningjava.array;
  */
 public class Check {
     public boolean mono(boolean[] data) {
-        boolean result = false;
+        boolean result = true;
         int j = 0;
-        for (int i = 0; i < data.length; i++) {
+        for (int i = 0; i < data.length/2; i++) {
             if (data[i] == data[data.length - 1 - j] == data[(data.length - 1) / 2]) {
                 result = true;
             } else {
                 result = false;
             }
+            if(result==false)
+                break;
             j++;
         }
         return result;
